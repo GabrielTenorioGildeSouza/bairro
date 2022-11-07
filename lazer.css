@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans:ital,wght@1.200 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right, #0C13B6,#1CD397);
+    height: 12vh;
+    position: fixed;
+    top: 0vh;
+    width: 100%;
+}
+
+.logotipo {
+    margin-right: -200px;
+    height: 75px;
+    width: 90px;
+}
+
+    
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 1px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-image: linear-gradient(to top, #0C13B6,#1CD397);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.vila1 {
+    font-family: 'Inter2', sans-serif;
+    color: black;
+    margin-left: 625px;
+    font-family: 'Poppins';
+}
+
+.hr1 {
+    height: 1px;
+    width: 1000px;
+    background-color: black;
+    margin-left: 180px;
+    margin-bottom: 50px;
+}
+
+.texto1 {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.espaço1 {
+    background-image: linear-gradient(to top, #6A3607, #59923E);
+    height: 1270px;
+}
+
+.vilalobos {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.vilalobosimg {
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+
+.user2 {
+    height: 450px;
+    float: right;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+.textos {
+    color: white;
+    font-family: 'Poppins';
+    margin-left: 230px;
+    width: 500px;
+}
+
+.espaço2 {
+    background-image: linear-gradient(to top, #329063, #15447A);
+    height: 1230px;
+}
+
+.user3 {
+    height: 450px;
+    float: right;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+.praçasenador {
+    height: 640px;
+    margin-left: 250px;
+}
+
+.espaço3 {
+    background-image: linear-gradient(to top, #135A54, #FE6161);
+    height: 1230px;
+}
+
+.user4 {
+    height: 450px;
+    float: right;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+.sesi {
+    height: 640px;
+    margin-left: 190px;
+}
+
+.espaço4 {
+    background-image: linear-gradient(to top, #00B507, #005BAF);
+    height: 1230px;
+}
+
+.user5 {
+    height: 450px;
+    float: right;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+.sesi {
+    height: 640px;
+    margin-left: 190px;
+}
+
+.espaço5 {
+    background-image: linear-gradient(to top, #00B507, #005BAF);
+    height: 1030px;
+}
+
+.user6 {
+    height: 450px;
+    float: right;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+.acm {
+    height: 440px;
+    margin-left: 150px;
+}
+
+.rodapé {
+    height: 200px;
+    background-image: linear-gradient(to left, #0C13B6, #10b17b);
+}
+
+.logorodape {
+    height: 70px;
+    margin-left: 75px;
+    float: left;
+    margin-right: 10px;
+}
+
+.vilarodape {
+    padding-top: 23px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+}
+
+.redessociais {
+    float: right;
+    height: 50px;
+    margin-top: -35px;
+}
+
+.linharodape {
+    background-color: white;
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 60px;
+}
+
+.copr {
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}

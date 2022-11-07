@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans:ital,wght@1.200 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins2:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right, #0C13B6,#1CD397);
+    height: 12vh;
+    position: fixed;
+    top: 0vh;
+    width: 100%;
+}
+
+.logotipo {
+    margin-right: -200px;
+    height: 75px;
+    width: 90px;
+}
+
+.main1 {
+    background: url(leopoldina\ de\ cima.png) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+    }       
+
+.capa {
+    padding-bottom: 10px;
+}
+
+    
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 1px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-image: linear-gradient(to top, #0C13B6,#1CD397);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.capa1 {
+    height: 570px;
+    background-image: linear-gradient(to right, #183BAB, #6F2285, #82002F);
+    padding-right: 150px;
+    padding-left: 30px;
+}
+
+.comercio1 {
+    color: white;
+    margin-left: 570px;
+    font-family: 'Poppins';
+}
+
+.hr1 {
+    height: 1px;
+    width: 1000px;
+    background-color: white;
+    margin-left: 160px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article1 {
+    border: solid white 1px;
+    border-radius: 30px;
+    height: 380px;
+    width: 320px;
+    margin-right: 0px;
+    padding-left: 13px;
+    float: right;
+}
+
+.imagem {
+    height: 50vh;
+    margin-left: -5px;
+    margin-top: 6px;
+}
+
+.texto1 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: white;
+    margin-left: 250px;
+    width: 500px;
+}
+
+.indice {
+    text-align: center;
+    font-family: 'Poppins2', sans-serif;
+}
+
+.titulos {
+    margin-left: 50px;
+    font-family: 'Poppins2', sans-serif;
+}
+
+.botao1 {
+    margin-left: 350px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image: linear-gradient(to right, #0C13B6,#1CD397);
+    border: none;
+    border-radius: 20px;
+}
+
+.botao4 {
+    margin-left: 100px;
+    height: 50px;
+    width: 170px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image: linear-gradient(to right, #0C13B6,#1CD397);
+    border: none;
+    border-radius: 20px;
+}
+
+.botao5 {
+    margin-left: 80px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image: linear-gradient(to right, #0C13B6,#1CD397);
+    border: none;
+    border-radius: 20px;
+}
+
+.quadrado1 {
+    display: inline-block;
+    padding-top: 5px;
+    height: 205px;
+    width: 335px;
+    border-radius: 10px;
+    box-shadow: black 3px 3px 10px;
+    margin-left: 100px;
+}
+
+.quadrado2 {
+    display: inline-block;
+    padding-top: 13px;
+    height: 205px;
+    width: 335px;
+    border-radius: 10px;
+    box-shadow: black 3px 3px 10px;
+    margin-left: 70px;
+}
+
+.quadrado3 {
+    display: inline-block;
+    padding-top: 13px;
+    height: 205px;
+    width: 335px;
+    border-radius: 10px;
+    box-shadow: black 3px 3px 10px;
+    margin-left: 70px;
+}
+
+.imagem1 {
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 28px;
+    padding-bottom: 200px;
+    margin-bottom: 57px;
+}
+
+.imagem2 {
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 8px;
+    padding-bottom: 200px;
+    margin-bottom: 57px;
+}
+
+.imagem3 {
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding-bottom: 200px;
+    margin-bottom: 57px;
+}
+
+.subtitu {
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.rodapé {
+    height: 200px;
+    background-image: linear-gradient(to left, #0C13B6, #10b17b);
+}
+
+.logorodape {
+    height: 70px;
+    margin-left: 75px;
+    float: left;
+    margin-right: 10px;
+}
+
+.vilarodape {
+    padding-top: 23px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+}
+
+.redessociais {
+    float: right;
+    height: 50px;
+    margin-top: -35px;
+}
+
+.linharodape {
+    background-color: white;
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 60px;
+}
+
+.copr {
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}

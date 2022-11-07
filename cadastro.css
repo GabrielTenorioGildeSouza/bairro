@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+
+.imgcad {
+    height: 667px;
+    width: 680px;
+    float: left;
+}
+
+.return {
+    margin-left: -650px;
+    margin-top: 20px;
+    margin-bottom: 560px;
+    z-index: 1px;
+    height: 25px;
+}
+
+.retangulocad {
+    height: 550px;
+    width: 390px;
+    background-color: none;
+    box-shadow: -3px 5px 15px;
+    margin-left: 830px;
+    margin-top: -550px;
+    border-radius: 10px;
+}
+
+.titu{
+    font-family: 'Inter2', sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 30px;
+}
+
+.googlelogin {
+    width: 320px;
+    height: 38px;
+    margin-left: 33px;
+}
+
+.facebooklogin {
+    width: 320px;
+    height: 37px;
+    margin-left: 33px;
+}
+
+.linha1 {
+    float: left;
+    width: 120px;
+    margin-left: 35px;
+    margin-right: 30px;
+}
+
+.Ou {
+    margin-top: -9px;
+    font-family: "Inter2", sans-serif;
+    font-size: 14px;
+}
+
+.linha2 {
+    float: right;
+    width: 120px;
+    margin-top: -7px;
+    margin-right: 30px;
+}
+
+.username {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+
+.input1 {
+    height: 35px;
+    width: 320px;
+    margin-left: 28px;
+    border: solid black 1px;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-color: rgb(204, 204, 204);
+}
+
+.Senha{
+    position: absolute;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+position: relative;
+height: 35px;
+width: 320px;
+margin-left: 28px;
+}
+
+
+.box1 input {
+    padding-left: 13px;
+}
+
+.wrapper input{
+position: absolute;
+width: 320px;
+height: 35px;
+margin-top: -0px;
+border: 1px solid black;
+background-color: rgb(204, 204, 204);
+padding-left: 15px;
+font-size: 13px;
+outline: none;
+border-radius: 5px;
+}
+.wrapper input::placeholder{
+font-size: 13px;
+}
+.wrapper span{
+position: absolute;
+margin-left: 290px;
+top: -66px;
+transform: translateY(-50%);
+font-size: 20px;
+color: #0C13B6;
+cursor: pointer;
+display: none;
+}
+.wrapper input:valid ~ span{
+display: block;
+}
+.wrapper span i.hide-btn::before{
+content: "\f070";
+}
+
+.contornobot {
+    height: 50px;
+    width: 150px;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.botaocad {
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 43px;
+    background-color: none;    
+    background-image: linear-gradient(to right, #0C13B6, #1CD397);    
+    font-size: 15px;
+    font-family: 'Inter2',sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+}
+
+.cada {
+    margin-left: -20px;
+}

@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans:ital,wght@1.200 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right, #0C13B6,#1CD397);
+    height: 12vh;
+    position: fixed;
+    top: 0vh;
+    width: 100%;
+}
+
+.logotipo {
+    margin-right: -200px;
+    height: 75px;
+    width: 90px;
+}
+
+.main1 {
+    background: url(Galeria/leopoldina\ de\ cima.png) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+    }       
+
+.capa {
+    padding-bottom: 10px;
+}
+
+    
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 1px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-image: linear-gradient(to top, #0C13B6,#1CD397);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+.vila1 {
+    font-size: 65px;
+    font-family: 'Fira Fans', sans-serif;
+    color: #fff;
+
+}
+
+.p1 {
+    font-size: 20px;
+    font-family: 'Fira Sans';
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.botao1 {
+    padding: 5px;
+    height: 20px;
+    width: 80px;
+    background-color: none;
+    border: solid white 1px;
+    border-radius: 7px;
+    margin-bottom: 40px;
+}
+
+.botaocon {
+    font-size: 15px;
+    font-family: 'Fira Fans', sans-serif;
+    color: white;
+    padding-left: 8px;
+}
+
+
+.cadastre-se {
+    height: 680px;
+    width: 580px;
+    background-color: none;
+    border: solid black 1px;
+    margin-left: 770px;
+    margin-top: -150px;
+}
+
+#cadastre-se2 {
+    height: 680px;
+    width: 560px;
+    border: black 1px;
+    background-color: white;
+    margin-top: -660px;
+    margin-left: 790px;
+    box-shadow: -3px -1px 8px black;
+    margin-bottom: 130px;
+}
+
+.oque {
+    font-family: 'Inter2', sans-serif;
+    font-size: 35px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    color: #0C13B6;
+}
+
+.resumo {
+    font-family: 'Inter2', sans-serif;
+    font-size: 21px;
+    width: 730px;
+    float: left;
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+.retangulocad {
+    height: 7px;
+    width: 90px;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, #0C13B6, #1CD397);
+    margin-left: 250px;
+    margin-bottom: 40px;
+}
+
+.cadtexto {
+    height: 100px;
+    width: 500px;
+    margin-left: 100px;
+    background-color: none;
+}
+
+.titulocad {    
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 25px;
+}
+
+.textocad {
+    font-size: 25px;
+    font-family: 'Fira Sans';
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.linkad {
+    height: 70px;
+    height: 200px;
+}
+
+.linkad:hover {
+    opacity: 1;
+}
+
+
+
+.cadastrese {
+    height: 70px;
+    width: 200px;
+    background-image: linear-gradient(to right, #0C13B6, #1CD397);
+    margin-left: 170px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cadastrese:hover {
+    height: 80px;
+    width: 210x;
+    box-shadow: -5px -5px 6px black;
+    background-image: linear-gradient(to right, #1254FF, #1CD397);
+    background-color: #0C13B6;
+    transition: 0.09s;
+}
+
+.CADASTRO {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 23px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+}
+
+.linha1 {
+    height: 2px;
+    width: 1100px;
+    background-image: linear-gradient(to right, #0C13B6, #1CD397);
+    margin-left: 125px;
+    margin-bottom: 100px;
+}
+
+.algumas {
+    padding-left: 20px;
+    font-family: 'Inter2', sans-serif;
+    color: #0C13B6;
+    font-size: 35px;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.titcuri {
+    font-family: 'Fira Sans';
+    margin-left: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user1 {
+    height: 400px;
+    margin-left: 55px;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+.contornouser1 {
+    height: 450px;
+    width: 40%;
+    border-radius: 20px;
+    margin-top: -430px;
+    margin-left: -50px;
+    float: right;
+    margin-right: 25px;
+}
+
+.hollw {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 21px;
+    width: 720px;
+}
+
+.mapa {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    z-index: -3;
+    margin-bottom: -20px;
+}
+
+
+.contornomap {
+    height: 454px;
+    width: 1004px;
+    background-color: none;
+    border: solid black 1px;
+    margin-left: 177px;
+    border-radius: 20px;    
+    z-index: -3;
+    margin-top: -530px;
+}
+
+.bleble {
+    height: 20px;
+}
+
+.mapia {
+    width: 100%;
+    height: 570px;
+    background-image: linear-gradient(to right, #0C13B6, #10b17b);
+}
+
+.ble {
+    height: 50px;
+}
+
+.icons {
+    height: 470px;
+}
+
+.user2 {
+    height: 350px;
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-right: 80px;
+    float: left;
+}
+
+.urba {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 21px;
+    width: 1220px;
+}
+
+
+.user3 {
+    height: 350px;
+    margin-left: 70px;
+    margin-top: -40px;
+    margin-right: 30px;
+}
+
+.contornouser3 {
+    height: 300px;
+    width: 35%;
+    border-radius: 20px;
+    margin-left: -50px;
+    float: right;
+    margin-right: 25px
+}
+
+.linhasinha{
+    height: 1px;
+    width: 1000px;
+    margin-left: 130px;
+    background-color: black;
+}
+
+iframe {
+    border-radius: 20px;
+    height: 455px;
+    width: 1005px;
+}
+
+.rodapé {
+    height: 200px;
+    background-image: linear-gradient(to left, #0C13B6, #10b17b);
+}
+
+.logorodape {
+    height: 70px;
+    margin-left: 75px;
+    float: left;
+    margin-right: 10px;
+}
+
+.vilarodape {
+    padding-top: 23px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+}
+
+.redessociais {
+    float: right;
+    height: 50px;
+    margin-top: -35px;
+}
+
+.linharodape {
+    background-color: white;
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 60px;
+}
+
+.copr {
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
